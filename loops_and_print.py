@@ -6,6 +6,8 @@ def enumerate_list(lista):
             lista_enumerada.append(f"{counter}. {valor.title()}")
             counter +=1
     return lista_enumerada
+
+
 def enumerate_backwards(lista):
     new_list = []
     counter = 0
