@@ -13,7 +13,7 @@ def index_of_empty(list):
             return index
         else:
             index += 1
-    return -1
+        return -1
 
 
 def index_of(word, list):
@@ -33,11 +33,10 @@ def put(word, list):
 
 
 def remove(word, list):
-    index = 0
-    eliminations = 0
-    while index < len(list):
-        if word == list[index]:
+    count = 0
+    for index, element in enumerate(list):
+        if element == word:
             list[index] = ""
-            eliminations += 1
-        index += 1
-    return eliminations
+            count += 1
+            return count
+        return -1
