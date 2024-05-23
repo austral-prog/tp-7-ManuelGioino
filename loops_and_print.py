@@ -8,10 +8,10 @@ def enumerate_list(lista):
     return lista_enumerada
 
 
-def enumerate_backwards(colors):
+def enumerate_backwards(lista):
     new_list = []
     counter = 0
-    for indice, valor in enumerate(colors):
+    for indice, valor in enumerate(lista):
         if valor:
             new_element = f"{counter}. {valor[::-1]}"
             new_list.append(new_element)
