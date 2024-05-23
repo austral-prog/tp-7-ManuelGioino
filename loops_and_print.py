@@ -16,6 +16,9 @@ def enumerate_backwards(lista):
             new_element = f"{counter}. {valor[::-1]}"
             new_list.append(new_element)
             counter += 1
+            
+
+
     return new_list
 
 colors = ["Red", "Green", "", "White", "Black", ""]
